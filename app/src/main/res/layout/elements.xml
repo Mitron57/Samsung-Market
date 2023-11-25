@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/TV"
+        android:gravity="center"
+        android:text="c0oL m4rK3t"
+        android:textSize="40sp"
+        android:textColor="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.2">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/Items1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/Cola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Кола">
+
+            </CheckBox>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/Chips"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:text="Чипсы">
+
+            </CheckBox>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/Pizza"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Пицца">
+
+            </CheckBox>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/Items2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/Collider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Адронный коллайдер">
+
+            </CheckBox>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/RTX"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="RTX 4090">
+
+            </CheckBox>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/MacBook"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Apple MacBook Pro 16 M3">
+
+            </CheckBox>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Выберите способ доставки"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#001854">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/Delivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Gosling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Курьер">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Самовывоз">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/drone"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Дрон">
+
+            </RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="92dp"
+            android:background="@drawable/meme">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="139dp"
+            android:layout_height="92dp"
+            android:background="@drawable/meme2">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="161dp"
+            android:layout_height="92dp"
+            android:background="@drawable/meme3">
+
+        </ImageView>
+    </LinearLayout>
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/OrderComments"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Напишите комментарий к заказу">
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Clear"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:text="Очистить корзину">
+
+        </Button>
+
+        <Button
+            android:id="@+id/Order"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Оформить заказ">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
